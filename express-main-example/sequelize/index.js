@@ -13,8 +13,8 @@ const sequelize = new Sequelize({
 
 const modelDefiners = [
 	require('./models/user.model'),
-	require('./models/instrument.model'),
-	require('./models/orchestra.model'),
+	require('./models/goalJobsApplied.model'),
+	require('./models/team.model'),
 	// Add more models here...
 	// require('./models/item'),
 ];

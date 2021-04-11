@@ -1,8 +1,12 @@
 function applyExtraSetup(sequelize) {
-	const { instrument, orchestra } = sequelize.models;
+    const { user, team } = newFunction(sequelize);
 
-	orchestra.hasMany(instrument);
-	instrument.belongsTo(orchestra);
+    team.hasMany(user);
+    user.belongsTo(team);
 }
 
 module.exports = { applyExtraSetup };
+
+function newFunction(sequelize) {
+    return sequelize.models;
+}
